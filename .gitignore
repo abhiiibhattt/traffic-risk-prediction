@@ -1,0 +1,21 @@
+# Data
+data/raw/
+data/processed/*.parquet
+data/processed/*.csv
+
+# Models
+results/models/*.joblib
+
+# Plots & results
+results/figures/
+results/metrics/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.venv/
+env/

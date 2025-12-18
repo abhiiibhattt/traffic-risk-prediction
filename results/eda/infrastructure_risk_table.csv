@@ -1,0 +1,9 @@
+Traffic_Signal,Junction,Crossing,high_risk
+False,False,False,0.21535978694530977
+False,False,True,0.056238427596287006
+False,True,False,0.2671916123433948
+False,True,True,0.2472890146157473
+True,False,False,0.10903035000613692
+True,False,True,0.07581672945043665
+True,True,False,0.33934458018227653
+True,True,True,0.29848957084631983
