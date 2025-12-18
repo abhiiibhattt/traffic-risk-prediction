@@ -1,21 +1,33 @@
-# Data
-data/raw/
-data/processed/*.parquet
-data/processed/*.csv
+# =========================
+# Data (never commit raw data)
+# =========================
+data/
+!data/README.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
-# Models
+# =========================
+# Models (large binaries)
+# =========================
 results/models/*.joblib
 
-# Plots & results
-results/figures/
-results/metrics/
-
-# Python
+# =========================
+# Python cache
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Environment
+# =========================
+# Virtual environments
+# =========================
 .venv/
 env/
+venv/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
