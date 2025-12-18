@@ -60,36 +60,90 @@ The goal is to **predict whether an accident is high-risk** (severe) and estimat
 │
 ├── 📘 README.md
 └── 📜 requirements.txt
+x
+---
+
 
 ---
 
 ## 🔧 Feature Engineering
 
-Key features used:
+**Spatial**
+- Latitude
+- Longitude
 
-- **Spatial**
-  - Latitude, Longitude
-- **Temporal**
-  - Hour of day
-  - Day of week
-  - Month
-- **Weather**
-  - Visibility
-  - Wind speed
-  - Precipitation
-- **Infrastructure**
-  - Traffic signals
-  - Junctions
-  - Crossings
+**Temporal**
+- Hour of day
+- Day of week
+- Month
+
+**Weather**
+- Visibility
+- Wind speed
+- Precipitation
+
+**Infrastructure**
+- Traffic signals
+- Junctions
+- Crossings
 
 ---
 
 ## 📈 Exploratory Data Analysis
 
-Performed:
+Performed analyses include:
 - Temporal risk trends (hour, weekday, month)
 - Weather vs accident severity analysis
 - Infrastructure risk comparison
-- Spatial risk density visualization
+- Advanced spatial risk visualization (scatter, grid, hexbin, KDE)
 
-Outputs saved to:
+EDA outputs are saved to:
+results/eda/
+results/eda/spatial_advanced/
+
+
+---
+
+## 🤖 Modeling Approach
+
+Models trained and evaluated:
+
+- **Logistic Regression**
+  - Interpretable baseline
+- **HistGradientBoostingClassifier**
+  - Handles missing values natively
+  - Scales efficiently to millions of rows
+  - Captures non-linear patterns
+
+The best-performing model is automatically saved as:
+results/models/best_model.joblib
+
+
+---
+
+## 📊 Model Performance
+
+| Model | ROC-AUC | Accuracy |
+|------|--------:|---------:|
+| Logistic Regression | ~0.62 | ~0.54 |
+| HistGradientBoosting | ~0.81 | ~0.82 |
+
+Evaluation artifacts:
+- ROC curves
+- Confusion matrices
+- Metrics tables
+
+Saved under:
+results/figures/
+results/metrics/
+
+
+---
+
+## 🚦 Inference Pipeline
+
+Supports:
+
+### ✅ Single-record inference
+```python
+from inference_pipeline import predict_risk
