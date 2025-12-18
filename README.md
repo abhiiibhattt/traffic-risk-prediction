@@ -1,36 +1,55 @@
 # 🚦 Traffic Risk Prediction System
 
-An end-to-end machine learning project that predicts **high-risk traffic accidents** using spatio-temporal, weather, and infrastructure features from the **US Accidents dataset**.
+An end-to-end machine learning system for predicting **high-risk traffic accidents**
+using spatio-temporal, weather, and road infrastructure features from the
+**US Accidents dataset**.
 
-This project focuses on **real-world scalability**, **risk modeling**, and **interpretable ML**, and is designed as a strong **portfolio project** rather than a research paper.
+The system supports large-scale data processing, exploratory analysis,
+model training, and real-time or batch inference.
 
 ---
 
-## 🔍 Problem Statement
+## 🔍 Problem Overview
 
-Traffic accidents are influenced by:
-- Time of day & seasonality
+Traffic accident severity is influenced by multiple factors such as:
+- Time of day and seasonality
 - Weather conditions
-- Road infrastructure (junctions, crossings, signals)
+- Road infrastructure (junctions, crossings, traffic signals)
 - Geographic location
 
-The goal is to **predict whether an accident is high-risk** (severe) and estimate a **risk probability** that can be used for:
-- Traffic safety analysis
-- Risk-aware routing
-- Decision support systems
+The objective of this project is to:
+- Predict whether an accident is **high risk** (severe)
+- Estimate a **risk probability** that can be used for analysis or decision support
 
 ---
 
 ## 📊 Dataset
 
 **Source:** US Accidents Dataset  
-**Size:** ~7.7 million accident records  
+**Scale:** ~7.7 million accident records across the United States
 
 ### Target Definition
 - `high_risk = 1` → Severity ≥ 3  
 - `high_risk = 0` → Severity ≤ 2  
 
 ---
+
+## 🔗 Dataset Access
+
+This repository does **not** include the raw dataset due to its large size.
+
+You can download the **US Accidents Dataset** from the official source:
+
+🔗 https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents
+
+After downloading:
+
+1. Extract the CSV file
+2. Rename it to: US_accidents.csv
+
+3. Place it in: data/raw/US_accidents.csv
+
+The preprocessing pipeline will automatically handle the dataset in chunks.
 
 ## 🏗 Project Structure
 
@@ -98,7 +117,9 @@ Performed analyses include:
 - Advanced spatial risk visualization (scatter, grid, hexbin, KDE)
 
 EDA outputs are saved to:
+
 results/eda/
+
 results/eda/spatial_advanced/
 
 
@@ -116,6 +137,7 @@ Models trained and evaluated:
   - Captures non-linear patterns
 
 The best-performing model is automatically saved as:
+
 results/models/best_model.joblib
 
 
@@ -134,7 +156,9 @@ Evaluation artifacts:
 - Metrics tables
 
 Saved under:
+
 results/figures/
+
 results/metrics/
 
 
