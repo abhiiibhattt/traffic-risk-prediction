@@ -79,9 +79,10 @@ The preprocessing pipeline will automatically handle the dataset in chunks.
 │
 ├── 📘 README.md
 └── 📜 requirements.txt
-x
----
 
+---
+> ⚠️ **Note:** The raw dataset is excluded from the repository due to size.
+> See the Dataset section above for download instructions.
 
 ---
 
