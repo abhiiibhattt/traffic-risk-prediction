@@ -52,7 +52,7 @@ After downloading:
 The preprocessing pipeline will automatically handle the dataset in chunks.
 
 ## 🏗 Project Structure
-
+```text
 📦 traffic_risk_project
 │
 ├── 📂 data
@@ -79,7 +79,7 @@ The preprocessing pipeline will automatically handle the dataset in chunks.
 │
 ├── 📘 README.md
 └── 📜 requirements.txt
-
+```
 ---
 > ⚠️ **Note:** The raw dataset is excluded from the repository due to size.
 > See the Dataset section above for download instructions.
