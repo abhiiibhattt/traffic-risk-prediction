@@ -172,3 +172,20 @@ Supports:
 ### ✅ Single-record inference
 ```python
 from inference_pipeline import predict_risk
+``` 
+---
+
+## 👨‍💻 Author
+
+Abhinava Bhat P V
+
+* GitHub: https://github.com/abhiiibhattt
+* Portfolio: https://abhiiibhattt.github.io/portfolio/
+
+---
+
+## 📌 License
+
+This project is intended for educational, research, and portfolio purposes.
+
+© 2026 Abhinava Bhat P V. All rights reserved.
